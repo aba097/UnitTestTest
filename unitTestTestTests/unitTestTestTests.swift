@@ -25,6 +25,12 @@ final class unitTestTestTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    
+    func testMulti(){
+        let multiModel = Multi()
+        let result = multiModel.multiply(num1: 3, num2: 4)
+        XCTAssertEqual(result, 12)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
